@@ -28,7 +28,6 @@
     initScrollReveal();
     initTimeline();
     initContactForm();
-    initResumeBtn();
   }
 
   /* ─── Navigation ─── */
@@ -258,9 +257,9 @@
     });
   }
 
-  /* ─── 3D tilt cards + glare ─── */
+  /* ─── 3D tilt cards + glare (experience only — tilt breaks link clicks on project cards) ─── */
   function initTiltCards() {
-    const cards = document.querySelectorAll('.tilt-card[data-tilt]');
+    const cards = document.querySelectorAll('.exp-card.tilt-card[data-tilt]');
     if (prefersReducedMotion) return;
 
     cards.forEach((card) => {
@@ -404,13 +403,4 @@
     });
   }
 
-  /* ─── Resume download placeholder ─── */
-  function initResumeBtn() {
-    const btn = document.getElementById('resumeBtn');
-    if (!btn) return;
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      alert('Add your resume PDF as resume.pdf in the project root, then link this button to it.');
-    });
-  }
 })();

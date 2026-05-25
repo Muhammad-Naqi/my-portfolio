@@ -52,10 +52,13 @@
           <span class="code-label">&gt;</span>
           <span id="typingText" aria-live="polite">Backend Developer</span><span class="typing-cursor">_</span>
         </p>
-        <p class="hero__subtext">Building scalable backends from Gilgit, Pakistan 🌄</p>
+        <p class="hero__subtext">Building scalable backends from Gilgit, Pakistan</p>
         <div class="hero__cta">
           <a href="#projects" class="btn btn--primary">View Projects</a>
-          <a href="#" class="btn btn--outline" id="resumeBtn">Download Resume</a>
+          <a href="resume.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer" type="application/pdf">Resume (PDF)</a>
+          <a href="https://github.com/Muhammad-Naqi" class="btn btn--icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub — Muhammad-Naqi">
+            <i data-lucide="github"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -64,30 +67,37 @@
     <section class="section" id="about" aria-labelledby="about-heading">
       <h2 class="section__title reveal-3d" id="about-heading"><span class="code-label">// about</span></h2>
       <div class="about reveal-3d">
-        <div class="about__text">
-          <p>
-            I'm a <strong>backend-focused engineer</strong> with hands-on experience building production APIs with
-            <strong>NestJS</strong>, <strong>Node.js</strong>, and <strong>PostgreSQL</strong> — including Stripe integrations
-            and multi-tenant architectures. I've shipped systems for <strong>Norwegian clients</strong> and care deeply about
-            clean schemas, auth flows, and maintainable service layers.
-          </p>
-          <p>
-            Currently exploring <strong>data engineering</strong> and <strong>distributed systems</strong> — Spark, Airflow,
-            Kafka, and ETL pipelines — while continuing to ship reliable backends that scale.
-          </p>
+        <div class="about__profile">
+          <div class="about__photo-wrap">
+            <img src="assets/profile.png" alt="Muhammad Naqi" class="about__photo" width="280" height="280" loading="eager">
+          </div>
         </div>
-        <div class="about__stats">
-          <div class="stat-card" data-tilt>
-            <span class="stat-card__value">2+</span>
-            <span class="stat-card__label">Years Experience</span>
+        <div class="about__main">
+          <div class="about__text">
+            <p>
+              I'm a <strong>backend-focused engineer</strong> who has shipped <strong>100+ production APIs</strong> across
+              <strong>6–8 major platforms</strong> — from luxury real estate and legal-tech dashboards to restaurant management systems.
+              Stack: <strong>NestJS</strong>, <strong>Node.js</strong>, <strong>PostgreSQL</strong>, Stripe, auth systems, and third-party integrations.
+            </p>
+            <p>
+              Much of my client work is <strong>private or third-party</strong> (no public repos), but the live products speak for themselves.
+              I've built for international clients including Norwegian brand platforms, and I'm currently hands-on on
+              <strong>Shumal</strong> while exploring data engineering — Spark, Airflow, Kafka, and ETL pipelines.
+            </p>
           </div>
-          <div class="stat-card" data-tilt>
-            <span class="stat-card__value">10+</span>
-            <span class="stat-card__label">APIs Built</span>
-          </div>
-          <div class="stat-card" data-tilt>
-            <span class="stat-card__value">3</span>
-            <span class="stat-card__label">Major Projects</span>
+          <div class="about__stats">
+            <div class="stat-card" data-tilt>
+              <span class="stat-card__value">2+</span>
+              <span class="stat-card__label">Years Experience</span>
+            </div>
+            <div class="stat-card" data-tilt>
+              <span class="stat-card__value">100+</span>
+              <span class="stat-card__label">APIs Built</span>
+            </div>
+            <div class="stat-card" data-tilt>
+              <span class="stat-card__value">7+</span>
+              <span class="stat-card__label">Major Projects</span>
+            </div>
           </div>
         </div>
       </div>
@@ -159,19 +169,21 @@
             <div class="exp-card__node"></div>
             <header class="exp-card__header">
               <div>
-                <h3 class="exp-card__company">UFusion</h3>
-                <p class="exp-card__role">Backend Developer</p>
+                <h3 class="exp-card__company">
+                  <a href="https://ufusion.co/" target="_blank" rel="noopener noreferrer">UFusion</a>
+                </h3>
+                <p class="exp-card__role">Backend Developer · <a href="https://ufusion.co/" class="exp-card__org-link" target="_blank" rel="noopener noreferrer">ufusion.co</a></p>
               </div>
               <time class="exp-card__date" datetime="2023-06/2025-05">June 2023 – Present</time>
             </header>
-            <p class="exp-card__highlight">Currently working on brand-hub platform for Norwegian client</p>
+            <p class="exp-card__highlight">Backend for client platforms — BBR, Abogaphone, Shumal, brand-hub (Norway), and more</p>
             <div class="exp-card__tags">
-              <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>MongoDB</span><span>Stripe</span>
+              <span>Node.js</span><span>NestJS</span><span>PostgreSQL</span><span>MongoDB</span><span>Stripe</span>
             </div>
             <ul class="exp-card__list">
-              <li>Authentication systems & secure session management</li>
-              <li>Third-party API integrations & webhook pipelines</li>
-              <li>Scalable backend architecture for multi-service workflows</li>
+              <li>100+ REST APIs across 6–8 major production codebases</li>
+              <li>Dashboards & platforms for legal-tech, real estate, and hospitality clients</li>
+              <li>Authentication, third-party integrations, and scalable multi-tenant architecture</li>
             </ul>
             <pre class="exp-card__terminal" aria-hidden="true"><code>// brand-hub.api
 POST /auth/login → 200
@@ -204,11 +216,118 @@ GET  /integrations/stripe → ok</code></pre>
     <!-- PROJECTS -->
     <section class="section" id="projects" aria-labelledby="projects-heading">
       <h2 class="section__title reveal-3d" id="projects-heading"><span class="code-label">&gt; projects</span></h2>
-      <div class="projects-grid reveal-3d">
-        <article class="project-card tilt-card" data-tilt>
+      <p class="projects-intro reveal-3d">Client work is proprietary — links go to <strong>live products</strong>. Personal builds are mine end-to-end.</p>
+
+      <h3 class="projects-subtitle reveal-3d"><span class="code-label">// featured — production</span></h3>
+      <div class="projects-grid projects-grid--featured reveal-3d">
+        <article class="project-card project-card--featured">
           <div class="tilt-card__inner">
             <div class="tilt-card__glare" aria-hidden="true"></div>
-            <pre class="project-card__deco" aria-hidden="true"><code>class POSModule {}</code></pre>
+            <header class="project-card__head">
+              <span class="project-card__badge">Client · Private repo</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Best Branded Residences (BBR)</h3>
+              <div class="project-card__tags">
+                <span>Node.js</span><span>REST APIs</span><span>Dashboard</span>
+              </div>
+              <p class="project-card__desc">
+                Luxury real estate platform — backend APIs and dashboard work for branded residences,
+                listings, and client-facing operations. Third-party codebase; not on personal GitHub.
+              </p>
+              <div class="project-card__actions">
+                <a href="https://www.bestbrandedresidences.com/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="external-link"></i> Live website
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--featured">
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <header class="project-card__head">
+              <span class="project-card__badge">Client · Private repo</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Abogaphone</h3>
+              <div class="project-card__tags">
+                <span>Legal-tech</span><span>Platform APIs</span><span>Dashboard</span>
+              </div>
+              <p class="project-card__desc">
+                Spanish legal consultation platform — built and maintained dashboard/backend flows for
+                lawyer matching, consultations, and platform access. Client-owned repository.
+              </p>
+              <div class="project-card__actions">
+                <a href="https://abogaphone.es/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="external-link"></i> Live platform
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--featured">
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <header class="project-card__head">
+              <span class="project-card__badge project-card__badge--active">Hands-on · Active</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Shumal</h3>
+              <div class="project-card__tags">
+                <span>Restaurant SaaS</span><span>Dashboard</span><span>NestJS</span>
+              </div>
+              <p class="project-card__desc">
+                Smart restaurant management — I'm actively building the admin dashboard and backend.
+                Public marketing site and mobile app are rolling out soon; the live product today is the dashboard.
+              </p>
+              <div class="project-card__actions">
+                <a href="https://dashboard.shumal.com/sign-in" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="layout-dashboard"></i> Live dashboard
+                </a>
+                <span class="project-card__note">App & website coming soon</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="projects-subtitle reveal-3d"><span class="code-label">// personal — solo build</span></h3>
+      <div class="projects-grid projects-grid--personal reveal-3d">
+        <article class="project-card project-card--personal">
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <header class="project-card__head">
+              <span class="project-card__badge project-card__badge--personal">Personal · Vercel</span>
+            </header>
+            <div class="project-card__body">
+              <h3 class="project-card__title">TYHMUN</h3>
+              <p class="project-card__subtitle">The Youth Horizon Model United Nations</p>
+              <div class="project-card__tags">
+                <span>Vercel</span><span>Web App</span><span>Solo build</span>
+              </div>
+              <p class="project-card__desc">
+                Conference website I built and deployed on my own — simple, focused, and live.
+                Showcases event info and branding for a Model UN initiative without a heavy stack.
+              </p>
+              <div class="project-card__actions">
+                <a href="https://tyhmunweb.vercel.app/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="external-link"></i> Live site
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="projects-subtitle reveal-3d"><span class="code-label">// backend systems</span></h3>
+      <div class="projects-grid reveal-3d">
+        <article class="project-card">
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <div class="project-card__body">
             <h3 class="project-card__title">POS Backend System</h3>
             <div class="project-card__tags">
               <span>NestJS</span><span>PostgreSQL</span><span>TypeORM</span>
@@ -217,13 +336,14 @@ GET  /integrations/stripe → ok</code></pre>
               Multi-tenant point-of-sale backend with flexible inventory, categories, product variants,
               and store management — designed for scale across tenants.
             </p>
+            </div>
           </div>
         </article>
 
-        <article class="project-card tilt-card" data-tilt>
+        <article class="project-card">
           <div class="tilt-card__inner">
             <div class="tilt-card__glare" aria-hidden="true"></div>
-            <pre class="project-card__deco" aria-hidden="true"><code>router.post('/pay')</code></pre>
+            <div class="project-card__body">
             <h3 class="project-card__title">CRUD API Platform</h3>
             <div class="project-card__tags">
               <span>Node.js</span><span>Express</span><span>Sequelize</span><span>MySQL</span><span>Stripe</span>
@@ -232,13 +352,14 @@ GET  /integrations/stripe → ok</code></pre>
               Dynamic bank info resolution by country/currency with full Stripe payment workflows
               and RESTful CRUD operations on a Sequelize-backed schema.
             </p>
+            </div>
           </div>
         </article>
 
-        <article class="project-card tilt-card" data-tilt>
+        <article class="project-card">
           <div class="tilt-card__inner">
             <div class="tilt-card__glare" aria-hidden="true"></div>
-            <pre class="project-card__deco" aria-hidden="true"><code>Category → Product[]</code></pre>
+            <div class="project-card__body">
             <h3 class="project-card__title">Store Inventory Architecture</h3>
             <div class="project-card__tags">
               <span>PostgreSQL</span><span>Relational Design</span><span>REST</span>
@@ -247,6 +368,7 @@ GET  /integrations/stripe → ok</code></pre>
               Optimized relational category-product design with scalable backend structure
               and clean database architecture for high-read inventory workloads.
             </p>
+            </div>
           </div>
         </article>
       </div>
@@ -256,18 +378,8 @@ GET  /integrations/stripe → ok</code></pre>
     <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
       <h2 class="section__title reveal-3d" id="contact-heading"><span class="code-label">$ contact</span></h2>
       <div class="contact reveal-3d">
-        <div class="contact__avatar" aria-hidden="true">
-          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#00ff9f;stop-opacity:0.3"/>
-                <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0.3"/>
-              </linearGradient>
-            </defs>
-            <rect width="120" height="120" rx="16" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-            <text x="60" y="72" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="36" font-weight="700" fill="#00ff9f">MN</text>
-            <rect x="10" y="10" width="100" height="100" rx="12" fill="url(#avatarGrad)" opacity="0.5"/>
-          </svg>
+        <div class="contact__avatar">
+          <img src="assets/profile.png" alt="Muhammad Naqi" class="contact__photo" width="120" height="120" loading="lazy">
         </div>
         <ul class="contact__links">
           <li>
@@ -277,9 +389,27 @@ GET  /integrations/stripe → ok</code></pre>
             </a>
           </li>
           <li>
+            <a href="https://wa.me/923118508714" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="message-circle"></i>
+              WhatsApp (PK) +92 311 8508714
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/447988515600" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="message-circle"></i>
+              WhatsApp (UK) +44 7988 515600
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/naqihanus" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="instagram"></i>
+              @naqihanus
+            </a>
+          </li>
+          <li>
             <a href="https://github.com/Muhammad-Naqi" target="_blank" rel="noopener noreferrer">
               <i data-lucide="github"></i>
-              Muhammad-Naqi
+              github.com/Muhammad-Naqi
             </a>
           </li>
           <li>
