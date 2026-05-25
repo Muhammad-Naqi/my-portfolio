@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Naqi — Backend-focused Senior Web Developer. NestJS, Node.js, PostgreSQL. Building scalable APIs from Gilgit, Pakistan.">
+  <title>Muhammad Naqi | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#hero" class="skip-link">Skip to content</a>
+
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo" data-section="hero">
+      <span class="nav__logo-bracket">&lt;</span>Naqi<span class="nav__logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i data-lucide="menu"></i>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+      <li><a href="#experience" class="nav__link" data-section="experience">Experience</a></li>
+      <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+      <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__parallax" id="heroParallax">
+        <div class="hero__layer hero__layer--grid" data-depth="0.02"></div>
+        <div class="hero__layer hero__layer--snippets" data-depth="0.05">
+          <code class="hero__snippet hero__snippet--1">const api = await nest.create();</code>
+          <code class="hero__snippet hero__snippet--2">SELECT * FROM users WHERE active;</code>
+          <code class="hero__snippet hero__snippet--3">stripe.paymentIntents.create({...})</code>
+        </div>
+        <canvas class="hero__particles" id="particlesCanvas" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="hero__content hero__layer" data-depth="0.08">
+        <p class="hero__greeting"><span class="code-label">$ whoami</span></p>
+        <h1 class="hero__name" id="heroName">
+          <span class="hero__name-text" id="heroNameText">Muhammad Naqi</span><span class="hero__cursor" aria-hidden="true">|</span>
+        </h1>
+        <p class="hero__role">
+          <span class="code-label">&gt;</span>
+          <span id="typingText" aria-live="polite">Backend Developer</span><span class="typing-cursor">_</span>
+        </p>
+        <p class="hero__subtext">Building scalable backends from Gilgit, Pakistan 🌄</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#" class="btn btn--outline" id="resumeBtn">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <h2 class="section__title reveal-3d" id="about-heading"><span class="code-label">// about</span></h2>
+      <div class="about reveal-3d">
+        <div class="about__text">
+          <p>
+            I'm a <strong>backend-focused engineer</strong> with hands-on experience building production APIs with
+            <strong>NestJS</strong>, <strong>Node.js</strong>, and <strong>PostgreSQL</strong> — including Stripe integrations
+            and multi-tenant architectures. I've shipped systems for <strong>Norwegian clients</strong> and care deeply about
+            clean schemas, auth flows, and maintainable service layers.
+          </p>
+          <p>
+            Currently exploring <strong>data engineering</strong> and <strong>distributed systems</strong> — Spark, Airflow,
+            Kafka, and ETL pipelines — while continuing to ship reliable backends that scale.
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat-card" data-tilt>
+            <span class="stat-card__value">2+</span>
+            <span class="stat-card__label">Years Experience</span>
+          </div>
+          <div class="stat-card" data-tilt>
+            <span class="stat-card__value">10+</span>
+            <span class="stat-card__label">APIs Built</span>
+          </div>
+          <div class="stat-card" data-tilt>
+            <span class="stat-card__value">3</span>
+            <span class="stat-card__label">Major Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <h2 class="section__title reveal-3d" id="skills-heading"><span class="code-label">$ skills</span></h2>
+      <div class="skills reveal-3d">
+        <div class="skill-group">
+          <h3 class="skill-group__title">Backend</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Node.js</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="server"></i>Runtime</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Express.js</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="layers"></i>Framework</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">NestJS</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="box"></i>Framework</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">REST APIs</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="globe"></i>Protocol</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Auth Systems</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="shield"></i>Security</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Stripe</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="credit-card"></i>Payments</span></span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Databases</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">PostgreSQL</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="database"></i>SQL</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">MongoDB</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="database"></i>NoSQL</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">MySQL</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="database"></i>SQL</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">TypeORM</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="link"></i>ORM</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Mongoose</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="link"></i>ODM</span></span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">JavaScript</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="code-2"></i>ES6+</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">TypeScript</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="file-code"></i>Typed</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">SQL</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="terminal"></i>Query</span></span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Tools</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Git</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="git-branch"></i>VCS</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Docker</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="package"></i>Containers</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Linux</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="hard-drive"></i>OS</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">ChatGPT API</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="bot"></i>AI</span></span>
+          </div>
+        </div>
+        <div class="skill-group skill-group--learning">
+          <h3 class="skill-group__title">Learning</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Apache Spark</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="zap"></i>Big Data</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Airflow</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="workflow"></i>Orchestration</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">Kafka</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="radio"></i>Streaming</span></span>
+            <span class="skill-pill"><span class="skill-pill__face skill-pill__face--front">ETL Pipelines</span><span class="skill-pill__face skill-pill__face--back"><i data-lucide="git-merge"></i>Data</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <h2 class="section__title reveal-3d" id="experience-heading"><span class="code-label">// experience</span></h2>
+      <div class="timeline reveal-3d">
+        <div class="timeline__line" id="timelineLine" aria-hidden="true"></div>
+
+        <article class="exp-card exp-card--primary tilt-card" data-tilt>
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <div class="exp-card__node"></div>
+            <header class="exp-card__header">
+              <div>
+                <h3 class="exp-card__company">UFusion</h3>
+                <p class="exp-card__role">Backend Developer</p>
+              </div>
+              <time class="exp-card__date" datetime="2023-06/2025-05">June 2023 – Present</time>
+            </header>
+            <p class="exp-card__highlight">Currently working on brand-hub platform for Norwegian client</p>
+            <div class="exp-card__tags">
+              <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+            <ul class="exp-card__list">
+              <li>Authentication systems & secure session management</li>
+              <li>Third-party API integrations & webhook pipelines</li>
+              <li>Scalable backend architecture for multi-service workflows</li>
+            </ul>
+            <pre class="exp-card__terminal" aria-hidden="true"><code>// brand-hub.api
+POST /auth/login → 200
+GET  /integrations/stripe → ok</code></pre>
+          </div>
+        </article>
+
+        <article class="exp-card exp-card--secondary tilt-card" data-tilt>
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <div class="exp-card__node"></div>
+            <header class="exp-card__header">
+              <div>
+                <h3 class="exp-card__company">Digital Daun</h3>
+                <p class="exp-card__role">Appointment Setter</p>
+              </div>
+              <span class="exp-card__date">6 Months · Remote</span>
+            </header>
+            <ul class="exp-card__list">
+              <li>Outbound lead generation for service-based businesses</li>
+              <li>Cold outreach via SMS, email, and social platforms</li>
+              <li>Prospect qualification & discovery call scheduling</li>
+              <li>CRM/lead tracking, sales communication & client relationships</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <h2 class="section__title reveal-3d" id="projects-heading"><span class="code-label">&gt; projects</span></h2>
+      <div class="projects-grid reveal-3d">
+        <article class="project-card tilt-card" data-tilt>
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <pre class="project-card__deco" aria-hidden="true"><code>class POSModule {}</code></pre>
+            <h3 class="project-card__title">POS Backend System</h3>
+            <div class="project-card__tags">
+              <span>NestJS</span><span>PostgreSQL</span><span>TypeORM</span>
+            </div>
+            <p class="project-card__desc">
+              Multi-tenant point-of-sale backend with flexible inventory, categories, product variants,
+              and store management — designed for scale across tenants.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card tilt-card" data-tilt>
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <pre class="project-card__deco" aria-hidden="true"><code>router.post('/pay')</code></pre>
+            <h3 class="project-card__title">CRUD API Platform</h3>
+            <div class="project-card__tags">
+              <span>Node.js</span><span>Express</span><span>Sequelize</span><span>MySQL</span><span>Stripe</span>
+            </div>
+            <p class="project-card__desc">
+              Dynamic bank info resolution by country/currency with full Stripe payment workflows
+              and RESTful CRUD operations on a Sequelize-backed schema.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card tilt-card" data-tilt>
+          <div class="tilt-card__inner">
+            <div class="tilt-card__glare" aria-hidden="true"></div>
+            <pre class="project-card__deco" aria-hidden="true"><code>Category → Product[]</code></pre>
+            <h3 class="project-card__title">Store Inventory Architecture</h3>
+            <div class="project-card__tags">
+              <span>PostgreSQL</span><span>Relational Design</span><span>REST</span>
+            </div>
+            <p class="project-card__desc">
+              Optimized relational category-product design with scalable backend structure
+              and clean database architecture for high-read inventory workloads.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="section__title reveal-3d" id="contact-heading"><span class="code-label">$ contact</span></h2>
+      <div class="contact reveal-3d">
+        <div class="contact__avatar" aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ff9f;stop-opacity:0.3"/>
+                <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0.3"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="120" rx="16" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+            <text x="60" y="72" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="36" font-weight="700" fill="#00ff9f">MN</text>
+            <rect x="10" y="10" width="100" height="100" rx="12" fill="url(#avatarGrad)" opacity="0.5"/>
+          </svg>
+        </div>
+        <ul class="contact__links">
+          <li>
+            <a href="mailto:muhamnaqi@gmail.com">
+              <i data-lucide="mail"></i>
+              muhamnaqi@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Muhammad-Naqi" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="github"></i>
+              Muhammad-Naqi
+            </a>
+          </li>
+          <li>
+            <span class="contact__location">
+              <i data-lucide="map-pin"></i>
+              Gilgit, Gilgit-Baltistan, Pakistan
+            </span>
+          </li>
+        </ul>
+
+        <form class="contact__form" id="contactForm" action="mailto:muhamnaqi@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Let's build something..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i data-lucide="send"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Crafted with ☕ and Node.js by <strong>Muhammad Naqi</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
